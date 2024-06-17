@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando Bolivia</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#destino1">Destino 1</a></li>
+            <li><a href="#destino2">Destino 2</a></li>
+            <li><a href="#destino3">Destino 3</a></li>
+        </ul>
+    </nav>
+    <section id="destino1" class="destination">
+        <h2>1 Departamento: La Paz</h2>
+        <img src="images/lapaz.jpg" alt="Lapaz" class="r" onclick="showModal('lapaz')">
+        <p>La ciudad de la La Paz es la capital de bolivia.</p>
+    </section>
+    <section id="destino2" class="destination">
+        <h2>2 Departamento: Tarija</h2>
+        <img src="images/tarija.jpg" alt="Tarija" class="r" onclick="showModal('tarija')">
+        <p>La chura Tarija, es considerada la “Capital del vino”, “Capital de la sonrisa”.</p>
+    </section>
+    <section id="destino3" class="destination">
+        <h2>3 Departamento: Cochabamba</h2>
+        <img src="images/cochabamba.jpg" alt="Cochabamba" class="r" onclick="showModal('cochabamba')">
+        <p>Cochabamba se destaca por su diversa y exquisita comida; por ello fue 
+            distinguida por la UNESCO como ciudad creativa en gastronomía.</p>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
